@@ -1,0 +1,90 @@
+/* styles.css */
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(209, 209, 209);
+    color: #493f3f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #353535;
+    color: rgb(255, 255, 255);
+    padding: 1em 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+main {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 252, 252, 0.705);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(59, 29, 29, 0.822);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Media query for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+    nav {
+        padding: 1em 40px;
+    }
+
+    .nav-links {
+        gap: 2em;
+    }
+
+    main {
+        padding: 30px;
+    }
+}
+
+/* Media query for desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+    header {
+        padding: 1em 60px;
+    }
+
+    main {
+        padding:40px;
+    }
+}
